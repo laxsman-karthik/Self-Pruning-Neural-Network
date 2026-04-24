@@ -2,7 +2,6 @@
 
 This project implements a neural network that learns to prune its own weights during training. Instead of removing weights after training, the model uses learnable gates to automatically identify and suppress less important connections.
 
----
 
 ## Core Idea
 
@@ -27,7 +26,6 @@ Loss = Classification Loss + λ × Sparsity Loss
 
 This pushes many gate values toward zero, making the network sparse.
 
----
 
 ## Objective
 
@@ -36,7 +34,6 @@ The goal is to:
 - Demonstrate how pruning happens during training  
 - Show the trade-off between accuracy and sparsity using different λ values  
 
----
 
 ## How to Run
 
@@ -60,7 +57,6 @@ python main.py
   - Test Accuracy
   - Sparsity Level (% of pruned weights)
 
----
 
 ## Output
 
@@ -68,8 +64,6 @@ python main.py
 - A histogram plot of gate values:
   - Saved as `gate_distribution.png`
   - Shows distribution of pruned vs active weights  
-
----
 
 ## Project Structure
 
@@ -81,11 +75,9 @@ report.md     → Detailed report
 gate_distribution.png → Output graph  
 ```
 
----
 
 ## Notes
 
 - Dataset is not included in the repository (auto-downloaded)
 - Focus is on sparsity–accuracy trade-off, not maximizing accuracy
 
----
